@@ -1,10 +1,10 @@
-﻿internal class Ex01
+﻿internal class Ex01d
 {
     /// <summary>
     /// kelvin = celsius + 273 
     /// fahrenheit = celsius x 18 / 10 + 32
     /// </summary>
-    static void ex01()
+    static void Ex01()
 	{
 		Console.Write("Nhap vao do Celsius: ");
 		float celsius = float.Parse(Console.ReadLine());
@@ -18,7 +18,7 @@
     /// surface= 4 * pi * radius squared
     /// volume= 4 / 3 * pi * radius cubed
     /// </summary>
-    static void ex02()
+    static void Ex02()
 	{
         Console.Write("Nhap vao ban kinh hinh tru: ");
         float radius = float.Parse(Console.ReadLine());
@@ -27,9 +27,11 @@
 		double volume = 4 / 3 * Math.PI * Math.Pow(radius, 3);
         Console.WriteLine($"Shpere radius = {radius} surface = {surface} volume ={volume}");
 	}
-	public static void Main( string[] args )
-	{
-		 ex01();
-		 ex02();
-	}
+
+    public static void Main(string[] args)
+    {
+        Ex01();
+        Ex02();
+    }
+
 }
